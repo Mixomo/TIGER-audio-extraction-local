@@ -1,0 +1,46 @@
+<section class="tg-controls" aria-label="Separation settings">
+  <div class="tg-compact-source" hidden><div class="tg-compact-file"><span class="tg-compact-icon" aria-hidden="true">✓</span><div><strong></strong><span class="tg-compact-mode"></span></div></div><div class="tg-compact-actions"><button type="button" class="tg-edit" aria-controls="tiger-editor" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h5m4 0h7M4 17h9m4 0h3"/><circle cx="11" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></svg><span data-c="edit">Settings</span><svg class="tg-edit-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><button type="button" class="tg-new" data-c="newFile">New file</button></div></div>
+  <div class="tg-editor-shell" id="tiger-editor"><div class="tg-editor">
+    <div class="tg-settings-heading" hidden><strong data-c="settingsTitle">Separation settings</strong><p data-c="settingsHelp">Change the file or tracks, then create a new separation.</p></div>
+    <section class="tg-step tg-step-source" aria-labelledby="tg-source-heading">
+      <div class="tg-step-heading"><span class="tg-step-number" aria-hidden="true">1</span><div><h2 id="tg-source-heading" data-c="fileTitle">Add a file</h2><p data-c="fileHelp">Audio or video, up to 5 minutes.</p></div></div>
+      <div class="tg-input-panel"><span class="tg-folder-tabs" aria-hidden="true"><i></i><i></i><i></i></span>
+        <input class="tg-file-input" type="file" accept="audio/*,video/*,.wav,.mp3,.flac,.m4a,.aac,.ogg,.oga,.opus,.wma,.aiff,.aif,.aifc,.alac,.ape,.wv,.mka,.ac3,.eac3,.dts,.amr,.au,.caf,.mp2,.mpc,.tta,.w64,.spx,.mp4,.m4v,.mov,.webm,.mkv,.avi,.wmv,.flv,.mpg,.mpeg,.ts,.mts,.m2ts,.3gp,.3g2,.vob,.ogv,.asf,.divx,.f4v,.mxf,.rm,.rmvb" tabindex="-1" aria-hidden="true">
+        <div class="tg-file-card" hidden><div class="tg-file-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H5v18h14V8zM14 3v5h5"/></svg></div><div class="tg-file-details"><strong class="tg-chosen-name"></strong><span class="tg-chosen-meta"></span></div><button type="button" class="tg-replace" aria-controls="tiger-source-picker" aria-expanded="false"><span data-c="replace">Change</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><button type="button" class="tg-remove" aria-label="Remove file">×</button></div>
+        <div class="tg-upload-state" hidden role="status" aria-live="polite"><span class="tg-mini-spinner" aria-hidden="true"></span><span></span></div>
+        <div class="tg-input-preview" hidden><p class="tg-preview-label" data-c="originalLabel">Original file · before separation</p><video playsinline preload="metadata" hidden></video><div class="tg-input-transport"><button type="button" class="tg-preview-play" aria-label="Play original">▶</button><span data-c="original">Original</span><div class="tg-preview-wave" data-wave-state="empty"><svg viewBox="0 0 640 64" preserveAspectRatio="none" aria-hidden="true"></svg><input class="tg-preview-seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Playback position"></div><output>0:00</output><span class="tg-preview-duration"></span></div><p class="tg-wave-note" role="status" aria-live="polite" hidden></p></div>
+        <div class="tg-source-picker" id="tiger-source-picker"><div class="tg-import-options">
+          <div class="tg-replace-heading" hidden><strong data-c="replaceTitle">Choose another file</strong><button type="button" class="tg-cancel-replace" data-c="cancelReplace">Cancel</button></div>
+          <div class="tg-import-choices">
+            <button type="button" class="tg-drop tg-import" data-import="audio"><span class="tg-drop-art" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 13v6m5-11v16m5-20v24m5-18v12m5-9v6"/></svg></span><span class="tg-drop-copy"><strong data-c="chooseAudio">Import audio</strong><span data-c="audioInputHint">A recording, song or podcast.</span><small data-c="audioFormats">MP3 · WAV · FLAC · AAC · OGG · and more</small></span><span class="tg-import-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="tg-import-video tg-import" data-import="video"><span class="tg-drop-art" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="4" y="7" width="24" height="18" rx="4"/><path d="m13 12 7 4-7 4z"/></svg></span><span class="tg-drop-copy"><strong data-c="chooseVideo">Import video</strong><span data-c="videoInputHint">Separate its sound. Keep the picture.</span><small data-c="videoFormats">MP4 · MKV · AVI · MOV · WebM · and more</small></span><span class="tg-import-arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <div class="tg-import-foot"><span data-c="browse">or drop your file here</span><span class="tg-file-limits" data-c="limits">Any length · any size</span></div>
+        </div>
+        </div>
+        <audio class="tg-input-audio" preload="metadata"></audio>
+        <p class="tg-upload-error" hidden role="alert"></p>
+      </div>
+        <div class="tg-examples"><span data-c="examples">Or try an example</span><div><button type="button" class="tg-example" data-example="stems"><span data-c="exampleStems">Sound scene</span><small>1 min</small></button><button type="button" data-example="speakers"><span data-c="exampleSpeakers">Two voices</span><small>6 s</small></button><button type="button" data-example="video"><span data-c="exampleVideo">Video</span><small>25 s</small></button></div></div>
+    </section>
+    <section class="tg-step tg-step-options" hidden aria-labelledby="tg-options-heading">
+      <div class="tg-step-heading"><span class="tg-step-number" aria-hidden="true">2</span><div><h2 id="tg-options-heading" data-c="optionsTitle">What would you like to separate?</h2><p data-c="optionsHelp">Choose the tracks you want to hear.</p></div></div>
+      <div class="tg-task-switch" role="group" aria-label="Separation">
+        <button type="button" data-task="stems" aria-pressed="true"><span class="tg-choice-radio" aria-hidden="true"></span><span class="tg-choice-copy"><strong data-c="stems">Dialogue, music & effects</strong><small data-c="stemsHelp">3 tracks: speech, music and background sounds.</small></span><span class="tg-mini-layers" aria-hidden="true"><i></i><i></i><i></i></span></button>
+        <button type="button" data-task="speakers" aria-pressed="false"><span class="tg-choice-radio" aria-hidden="true"></span><span class="tg-choice-copy"><strong data-c="speakers">Two overlapping voices</strong><small data-c="speakersHelp">2 tracks: one for each person speaking.</small></span><span class="tg-mini-layers tg-mini-pair" aria-hidden="true"><i></i><i></i></span></button>
+      </div>
+      <div class="tg-video-output" hidden><span data-c="outputTitle">Export as</span><div class="tg-media-switch" role="group" aria-label="Output format"><button type="button" data-media="video" aria-pressed="false" data-c="video">Videos with isolated sound</button><button type="button" data-media="audio" aria-pressed="true" data-c="audio">Audio only</button></div></div>
+    </section>
+    <section class="tg-step tg-step-run" hidden aria-labelledby="tg-run-heading">
+      <div class="tg-step-heading"><span class="tg-step-number" aria-hidden="true">3</span><div><h2 id="tg-run-heading" data-c="runTitle">Start separation</h2><p class="tg-output-summary"></p></div></div>
+      <div class="tg-run-error" hidden role="alert" tabindex="-1"><strong></strong><p class="tg-error-copy"></p><p class="tg-quota-numbers"></p><p class="tg-retry-after"></p><button type="button" class="tg-shorter-file" data-c="shorterFile">Choose a shorter excerpt</button><small class="tg-error-reference"></small></div>
+      <div class="tg-run-status" hidden role="status" aria-live="polite" tabindex="-1">
+        <div class="tg-run-status-top"><span class="tg-orbit" aria-hidden="true"><i></i><i></i><i></i></span><div class="tg-run-status-copy"><span class="tg-processing-label" data-c="processingLabel">TIGER at work</span><strong></strong><p class="tg-processing-help"></p></div></div>
+        <div class="tg-inference-motion" aria-hidden="true"><i></i></div>
+        <div class="tg-steps"><span data-phase="prepare" data-c="prepare">Prepare</span><span data-phase="separating" data-c="separating">Separate</span><span data-phase="export" data-c="export">Export</span></div>
+        <div class="tg-inference-foot"><span data-c="keepOpen">Keep this page open.</span><span class="tg-elapsed" aria-live="off"><span data-c="elapsed">Elapsed</span> <output>0:00</output></span></div>
+      </div>
+      <button type="button" class="tg-run"><span data-c="run">Create the tracks</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></button>
+    </section>
+  </div></div>
+</section>

@@ -1,0 +1,6 @@
+const words={
+ en:{heading:'The research behind TIGER',principle:'TIGER is a lightweight audio separation model. It divides sound into frequency bands and combines information across time and frequency to reconstruct individual sources.',variants:'Here, TIGER-DnR separates dialogue, music and effects; the speech model separates two overlapping voices.',equal:'· * Equal contribution',paper:'Read the paper',code:'Research code',research:'TIGER research · Xu, Li, Chen & Hu',models:'TIGER-DnR model ↗'},
+ fr:{heading:'La recherche derrière TIGER',principle:'TIGER est un modèle léger de séparation audio. Il découpe le son en bandes de fréquences et croise les informations dans le temps et les fréquences pour reconstruire chaque source.',variants:'Ici, TIGER-DnR isole les dialogues, la musique et les effets ; le modèle de parole sépare deux voix superposées.',equal:'· * Contribution égale',paper:'Lire l’article',code:'Code de recherche',research:'Recherche TIGER · Xu, Li, Chen & Hu',models:'Modèle TIGER-DnR ↗'}
+};
+const translate=()=>{const lang=document.documentElement.lang==='fr'?'fr':'en';element.lang=lang;element.querySelectorAll('[data-credit]').forEach(n=>n.textContent=words[lang][n.dataset.credit]);};
+document.addEventListener('tiger:language',translate);translate();

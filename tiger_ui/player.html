@@ -1,0 +1,21 @@
+<section class="tg-workspace" aria-label="Separation workspace">
+  <div class="tg-error" hidden role="alert"></div>
+  <div class="tg-progress" hidden role="status" aria-live="polite"><span class="tg-orbit" aria-hidden="true"><i></i><i></i><i></i></span><strong></strong><p data-t="processingNote">Your tracks appear when separation is complete.</p><div class="tg-steps"><span data-step="prepare" data-t="prepare">Prepare</span><span data-step="separating" data-t="separating">Separate</span><span data-step="export" data-t="export">Export</span></div></div>
+  <div class="tg-results" hidden>
+    <div class="tg-result-head"><div><h2 data-t="listen" tabindex="-1">Separated tracks</h2><span class="tg-status" aria-live="polite"></span></div></div>
+    <p class="tg-track-help" data-t="compareHelp">Tap a folder tab to mute a track. Tap its waveform to seek.</p>
+    <div class="tg-folder-deck">
+      <div class="tg-media-top">
+        <div class="tg-track-list" role="group" aria-label="Tracks"></div>
+        <div class="tg-video-pane" hidden>
+          <div class="tg-video-screen"><video playsinline muted preload="metadata"></video></div>
+          <div class="tg-monitor-caption"><strong data-t="monitorTitle">Video preview</strong><span class="tg-monitor-sound">Sound from active tracks</span></div>
+        </div>
+      </div>
+      <div class="tg-plot-pane"><div class="tg-chart-toolbar"><span class="tg-plot-label" data-t="waveforms">Waveforms</span><div class="tg-layout" role="group" aria-label="Waveform layout"><button type="button" data-layout="overlay" aria-pressed="true" data-t="overlay">Overlay</button><button type="button" data-layout="unfold" aria-pressed="false" data-t="unfold">Separate</button></div></div><svg class="tg-wave" viewBox="0 0 900 310" role="slider" tabindex="0" aria-label="Playback position" aria-valuemin="0"></svg></div>
+    <div class="tg-transport"><button type="button" class="tg-play" aria-label="Play">▶</button><span class="tg-current" aria-live="polite"></span><button type="button" class="tg-original" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/></svg><span class="tg-original-label">Compare original</span></button><div class="tg-time-group"><output class="tg-time">0:00</output><input type="range" class="tg-seek" min="0" max="100" step="0.01" value="0" aria-label="Playback position"><span class="tg-duration">0:00</span></div></div>
+    <p class="tg-media-message" role="status" aria-live="polite"></p></div>
+    <div class="tg-result-foot"><span data-t="scale">Same timeline. Shared amplitude scale.</span><span class="tg-format"></span></div>
+  </div>
+  <div class="tg-preview-note" hidden data-t="preview">Preview using recorded TIGER results — no new inference.</div>
+</section>
