@@ -35,7 +35,7 @@ it locally with no Python knowledge and no cloud GPU.
 
 **Interface features**
 
-- 📂 **Audio or video input of any length and size.** Hour-long films and podcasts are processed in chunks (see [Long files](#-long-files)).
+- 📂 **Audio or video input of any length and size.** Hour-long films and podcasts are processed in chunks (see [Long files](https://github.com/Mixomo/TIGER-audio-extraction-local#%EF%B8%8F-long-files)).
 - 🎛️ **Almost any format.** Anything ffmpeg can read works:
   - **Audio:** MP3, WAV, FLAC, AAC/M4A, OGG/Opus, WMA, AIFF, ALAC, APE, AC3/DTS, and more.
   - **Video:** MP4, MKV, AVI, MOV, WebM, WMV, FLV, MPEG/TS, 3GP, VOB, and more.
